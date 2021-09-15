@@ -4,8 +4,8 @@ z = x * y
 
 print(z)
 print(round(z))
-print(round(z, 8))
-print("%.8f" % z)
+print(round(z, 6))
+print("%.6f" % z)
 
 
 
