@@ -7,6 +7,8 @@ print(response)
 print('------------------Connect to PLC------------------------------')
 start_time = time()
 with LogixDriver('192.168.32.39/1', init_tags=True) as plc:
+    # g = plc.get_plc_name()
+    # k = plc.read('_010R01:I.Data[0]')
     stop_time = time()
     print(f"Read tags time = {stop_time - start_time} sec")
     for i in range(1, 11):
