@@ -21,5 +21,5 @@ try:
             print(f"tag read for = {finish_time * 100} ms")
             i += i
             sleep(0.5)
-except (ValueError, Exception):
-    print("can't connect to PLC")
+except Exception as ex:
+    print(ex)
