@@ -18,4 +18,4 @@ with LogixDriver('192.168.32.39/1', init_tags=True) as plc:
         print(f"value of {k[0]} is {k[1]}")
         print(f"tag read for = {finish_time * 100} ms")
         i += i
-        sleep(1)
+        sleep(0.5)
