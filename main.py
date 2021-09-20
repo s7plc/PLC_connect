@@ -1,7 +1,6 @@
-from time import sleep, time
+from time import sleep, time, asctime
 from pycomm3 import LogixDriver
 from ping import response
-
 print(response)
 
 print('------------------Connect to PLC------------------------------')
@@ -20,6 +19,7 @@ try:
             print(f"value of {k[0]} is {k[1]}")
             print(f"tag read for = {finish_time * 100} ms")
             i += i
-            sleep(0.5)
+            sleep(1)
 except Exception as ex:
-    print(ex)
+    print(f"Failed at {asctime()} with error: {ex}")
+
