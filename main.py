@@ -22,4 +22,3 @@ try:
             sleep(1)
 except Exception as ex:
     print(f"Failed at {asctime()} with error: {ex}")
-
