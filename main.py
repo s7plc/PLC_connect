@@ -9,7 +9,7 @@ try:
     with LogixDriver('192.168.32.39/1', init_tags=True) as plc:
         stop_time = time()
         print(f"Read tags time = {stop_time - start_time} sec")
-        # print(plc.info)
+        # print(plc.get_plc_time())
         for i in range(1, 11):
             start_time1 = time()
             k = plc.read('HMI_IND')
