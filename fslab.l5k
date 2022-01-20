@@ -1546,7 +1546,7 @@ CONTROLLER FSLab (ProcessorType := "5069-L320ERMS3",
 
 	TAG
 		SW_Version : REAL (Class := Standard,
-		            RADIX := Float) := 0.1;
+		            RADIX := Float) := 10.12;
 		DI_0 : BOOL (Class := Standard,
 		            RADIX := Decimal) := 0;
 		F_True : BOOL (Description := "ALWAYS ON",
