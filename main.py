@@ -6,13 +6,13 @@ print(response)
 print('------------------Connect to PLC------------------------------')
 start_time = time()
 try:
-    with LogixDriver('192.168.32.39/1', init_tags=True) as plc:
+    with LogixDriver('172.31.38.130/0', init_tags=False) as plc:
         stop_time = time()
         print(f"Read tags time = {stop_time - start_time} sec")
         # print(plc.get_plc_time())
         for i in range(1, 11):
             start_time1 = time()
-            k = plc.read('HMI_IND')
+            k = plc.read('Cell1_Scanners_OK')
             finish_time = time() - start_time1
             print('------------------------------------------------')
             print(f"try # {i}")
