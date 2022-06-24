@@ -6,7 +6,7 @@ print(response)
 print('------------------Connect to PLC------------------------------')
 start_time = time()
 try:
-    with LogixDriver('172.31.38.130/0', init_tags=False) as plc:
+    with LogixDriver('172.31.38.130/0', init_tags=True) as plc:
         stop_time = time()
         print(f"Read tags time = {stop_time - start_time} sec")
         # print(plc.get_plc_time())
