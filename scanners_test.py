@@ -10,10 +10,10 @@ try:
         scanner5 = plc.read('Local:5:I.Pt00.Data')
         scanner3 = plc.read('Local:5:I.Pt03.Data')
         scanner8 = plc.read('Local:5:I.Pt02.Data')
-        for value in range(100):
-            plc.write('test_dint', value)
-            test = plc.read('test_dint')
-            print(test)
+        #for value in range(100):
+        #    plc.write('test_dint', value)
+        #    test = plc.read('test_dint')
+        #   print(test)
         #plc.write('test_real', value)
         #test = plc.read('test_real')
 
