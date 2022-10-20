@@ -22,6 +22,6 @@ try:
     print(f"    value of Scanner 3 is {scanner3[1]}")
     print(f"    value of Scanner 8 is {scanner8[1]}")
     print(f"value of {cell2[0]} is {cell2[1]}")
-    print(test)
+    print("test")
 except Exception as ex:
     print(f"Failed at {asctime()} with error: {ex}")
