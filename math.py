@@ -4,11 +4,11 @@ x = input("insert x: ")
 y = input("insert y: ")
 z = float(x) * float(y)
 print(z == 0.3)
-print(z) #float value
+print(z)  #float value
 print(type(z))
-print(round(z)) #round to whole number
-print(round(z, 8)) #round to 8 numbers after . zeros deleted
-print("%.8f" % z) #round to 8 numbers afetr . zeroes not deleted
+print(round(z))  #round to whole number
+print(round(z, 8))  #round to 8 numbers after . zeros deleted
+print("%.8f" % z)  #round to 8 numbers afetr . zeroes not deleted
 
 z = round(z, 4)
 print(z, z == 0.3, type(z))

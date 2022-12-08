@@ -4,7 +4,7 @@ from pycomm3 import LogixDriver
 print('------------------Connect to PLC------------------------------')
 value = 0
 try:
-    with LogixDriver('172.31.38.130/0', init_tags=True) as plc:
+    with LogixDriver('127.0.0.1/0', init_tags=True) as plc:
         cell1 = plc.read('Cell1_Scanners_OK')
         cell2 = plc.read('Cell2_Scanners_OK')
         scanner5 = plc.read('Local:5:I.Pt00.Data')
